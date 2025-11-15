@@ -7,6 +7,7 @@ In this study, RNA-seq data from GSE156451 (72 tumor and 72 matched normal tissu
 ✔ R & Python for downstream analysis (DEG, biomarkers, ML models, immune infiltration)
 
 # Objectives
+
 Identify differentially expressed genes (DEGs)
 
 Screen for biomarker genes using LASSO, ROC, and ML-driven feature ranking
@@ -16,7 +17,9 @@ Build cancer classification models (RF, SVM, ANN, GBM)
 Evaluate immune infiltration patterns
 
 Provide a reproducible analysis pipeline for future CRC biomarker research
-#
+
+# Workflow
+
 <img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/7fcbff94-fa59-4e86-b7bd-09ecefd83c1b" />
 
 
@@ -40,6 +43,7 @@ GSE156451 – NCBI Gene Expression Omnibus.
 
 
 # Project Members-
+
 Yusuf, Bilal, Saniya, Fahad and Farha 
 
 # Repository Structure
@@ -85,7 +89,8 @@ Yusuf, Bilal, Saniya, Fahad and Farha
     ├── requirements.txt
     └── environment.yml
 ```
-## Tools Used
+# Tools Used
+
 The following tools and packages were used in this RNA-seq analysis pipeline:
 
     FastQC – for raw sequence quality control
