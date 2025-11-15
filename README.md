@@ -5,7 +5,22 @@ Colorectal cancer (CRC) is characterised by extensive transcriptomic dysregulati
 <img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/7fcbff94-fa59-4e86-b7bd-09ecefd83c1b" />
 
 
+# Dataset Information
 
+Accession ID: GSE156451
+
+Samples: 144 total
+
+72 colorectal cancer tumor samples
+
+72 matched adjacent normal tissues
+
+Platform: Illumina RNA-seq
+
+Type: Raw FASTQ files + processed counts
+
+Raw data can be downloaded from:
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156451
 
 # Project Members-
 Yusuf, Bilal, Saniya, Fahad and Farha 
