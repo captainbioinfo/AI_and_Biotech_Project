@@ -9,3 +9,32 @@ Colorectal cancer (CRC) is characterised by extensive transcriptomic dysregulati
 
 **Project Members-** Yusuf, Bilal, Saniya, Fahad and Farha 
 
+# Requirements
+
+## Tools Used
+The following tools and packages were used in this RNA-seq analysis pipeline:
+
+    FastQC – for raw sequence quality control
+
+    Fastp – for trimming and filtering of reads
+
+    MultiQC – for aggregating QC reports
+
+    Hisat2 – for efficient alignment of RNA-seq reads
+
+    FeatureCounts – for efficient read summarisation
+
+    R Packages:
+
+        DESeq2 – differential expression analysis.
+        ClusterProfiler-
+        
+    Python Packages:
+        numpy
+        pandas
+        scipy
+        scikit-learn
+
+
+        
+    
