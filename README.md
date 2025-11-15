@@ -4,8 +4,6 @@ Colorectal cancer (CRC) is characterised by extensive transcriptomic dysregulati
 
 <img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/7fcbff94-fa59-4e86-b7bd-09ecefd83c1b" />
 
-                                                       Figure- Flowchart of methodology. 
-
 
 
 
