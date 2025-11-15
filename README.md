@@ -1,7 +1,7 @@
 # Project Overview
 
-Colorectal cancer (CRC) is characterised by extensive transcriptomic dysregulation that can be effectively profiled using RNA-sequencing (RNA-seq). This project integrates RNA-seq data processing, differential gene expression analysis, functional enrichment, and machine-learning classification to identify biomarker genes capable of distinguishing colorectal tumor tissues from matched normal samples. Using the publicly available **GSE156451** dataset, this project establishes a reproducible workflow for precision oncology research and biomarker discovery.
-In this study, RNA-seq data from GSE156451 (72 tumor and 72 matched normal tissues) were processed using a hybrid workflow:
+Colorectal cancer (CRC) is the third most common type of cancer worldwide, accounting for approximately 10% of all cancer-related deaths. This project integrates RNA-seq data processing, differential gene expression analysis, functional enrichment, and machine-learning classification to identify biomarker genes capable of distinguishing colorectal tumour tissues from matched normal samples. 
+In this study, RNA-seq data from GSE156451 were processed using a hybrid workflow:
 
 ✔ Galaxy for RNA-seq QC → trimming → alignment → quantification
 ✔ R & Python for downstream analysis (DEG, biomarkers, ML models, immune infiltration)
