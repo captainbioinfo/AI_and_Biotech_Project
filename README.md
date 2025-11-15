@@ -7,8 +7,8 @@ Colorectal cancer (CRC) is characterised by extensive transcriptomic dysregulati
 
 
 
-##
-**Project Members-** Yusuf, Bilal, Saniya, Fahad and Farha 
+# Project Members-
+Yusuf, Bilal, Saniya, Fahad and Farha 
 
 # Requirements
 
