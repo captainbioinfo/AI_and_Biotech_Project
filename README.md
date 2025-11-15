@@ -44,7 +44,7 @@ Yusuf, Bilal, Saniya, Fahad and Farha
 
 # Repository Structure
 
-( ``` ) 
+```
 ├── README.md
 │
 ├── galaxy_workflow/
@@ -84,7 +84,7 @@ Yusuf, Bilal, Saniya, Fahad and Farha
 └── environment/
     ├── requirements.txt
     └── environment.yml
-( ``` )
+```
 ## Tools Used
 The following tools and packages were used in this RNA-seq analysis pipeline:
 
