@@ -52,18 +52,14 @@ Yusuf, Bilal, Saniya, Fahad and Farha
 ```
 ├── README.md
 │
-├── galaxy_workflow/
-│   ├── galaxy_history_export.html
-│   ├── qc_reports/
-│   │   ├── fastqc_raw/
-│   │   └── fastqc_trimmed/
-│   ├── trimmed_reads/
+├── galaxy_history_export.html/
+│   ├── fastp_results
+│   ├── feature_count_results
+│   ├── gene_counts_matrix
 │   ├── alignments/
-│   │   ├── *.bam
-│   ├── counts/
-│       ├── gene_counts.tsv
-│       └── featurecounts_summary.txt
+│   └── hisat2_results
 │
+│       
 ├── data/
 │   ├── metadata.csv
 │   ├── processed/
@@ -73,10 +69,11 @@ Yusuf, Bilal, Saniya, Fahad and Farha
 │   └── raw/ (empty – raw FASTQs stored in Galaxy)
 │
 ├── scripts/
-│   ├── 01_deseq2_DEG_analysis.R
+│   ├── 01_to_merge_featurecounts.py
 │   ├── 02_LASSO_biomarker_selection.ipynb
 │   ├── 03_ML_classification_models.ipynb
 │   ├── 04_ROC_evaluation.ipynb
+    ├── 01_deseq2_DEG_analysis.R
 │   └── 05_immune_infiltration_analysis.ipynb
 │
 ├── results/
