@@ -13,5 +13,5 @@ merged = dfs[0]
 for df in dfs[1:]:
     merged = merged.merge(df, on="Geneid")
 
-merged.to_csv("merged_counts.csv", index=False)
+merged.to_csv("gene_counts_matrix.csv", index=False)
 
