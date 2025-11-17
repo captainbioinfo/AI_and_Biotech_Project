@@ -1,12 +1,11 @@
 Ewels, P., Magnusson, M., Lundin, S., & KÃ¤ller, M. (2016). MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics, 32(19), 3047–3048. https://doi.org/10.1093/bioinformatics/btw354 Visit reference 
 
 Danecek, P., Bonfield, J. K., Liddle, J., Marshall, J., Ohan, V., Pollard, M. O., Whitwham, A., Keane, T., McCarthy, S. A., Davies, R. M., & Li, H. (2021). Twelve years of SAMtools and BCFtools. GigaScience, 10(2). https://doi.org/10.1093/gigascience/giab008 Visit reference 
-Li, H. (2011). Improving SNP discovery by base alignment quality. Bioinformatics, 27(8), 1157–1158. https://doi.org/10.1093/bioinformatics/btr076 Visit reference 
 
-Leinonen, R., Sugawara, H., & and, M. S. (2010). The Sequence Read Archive. Nucleic Acids Research, 39(Database), D19–D21. https://doi.org/10.1093/nar/gkq1019 Visit reference 
-NCBI. (n.d.). sra-tools. In GitHub repository. GitHub. https://github.com/ncbi/sra-tools Visit reference 
+Li, H. (2011). Improving SNP discovery by base alignment quality. Bioinformatics, 27(8), 1157–1158. https://doi.org/10.1093/bioinformatics/btr076 Visit reference Leinonen, R., Sugawara, H., & and, M. S. (2010). The Sequence Read Archive. Nucleic Acids Research, 39(Database), D19–D21. https://doi.org/10.1093/nar/gkq1019 Visit reference NCBI. (n.d.). sra-tools. In GitHub repository. GitHub. https://github.com/ncbi/sra-tools Visit reference 
 
 Liao, Y., Smyth, G. K., & Shi, W. (2013). featureCounts: an efficient general purpose program for assigning sequence reads to genomic features. Bioinformatics, 30(7), 923–930. https://doi.org/10.1093/bioinformatics/btt656 Visit reference 
+
 Chen, S., Zhou, Y., Chen, Y., & Gu, J. (2018). fastp: an ultra-fast all-in-one FASTQ preprocessor. https://doi.org/10.1101/274100 Visit reference 
 
 Kim, D., Langmead, B., & Salzberg, S. L. (2015). HISAT: a fast spliced aligner with low memory requirements. Nature Methods, 12(4), 357–360. https://doi.org/10.1038/nmeth.3317 Visit reference 
