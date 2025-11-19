@@ -1,53 +1,78 @@
-# Project Overview
+# AI_and_Biotech_Project
+### *RNA-Seq Biomarker Discovery and Machine-Learning Classification for Colorectal Cancer (CRC)*
 
-Colorectal cancer (CRC) is the third most common type of cancer worldwide, accounting for approximately 10% of all cancer-related deaths. This project integrates RNA-seq data processing, differential gene expression analysis, functional enrichment, and machine-learning classification to identify biomarker genes capable of distinguishing colorectal tumour tissues from matched normal samples. 
-In this study, RNA-seq data from GSE156451 were processed using a hybrid workflow:
+---
 
-✔ Galaxy for RNA-seq QC → trimming → alignment → quantification
-✔ R & Python for downstream analysis (DEG, biomarkers, ML models, immune infiltration)
+# 📌 Project Overview
 
-# Objectives
+Colorectal cancer (CRC) is the third most prevalent malignancy worldwide and accounts for nearly **10% of all cancer-related deaths**. Accurate early detection remains a challenge due to tumour heterogeneity and lack of reliable biomarkers.
 
-Identify differentially expressed genes (DEGs)
+This project integrates:
 
-Screen for biomarker genes using LASSO, ROC, and ML-driven feature ranking
+- **RNA-seq preprocessing**
+- **Differential gene expression (DEG) analysis**
+- **Feature selection (LASSO, ROC-AUC screening)**
+- **Machine-learning classification (SVM, RF, ANN, GBM)**
+- **Immune infiltration profiling (CIBERSORT)**
+- **Functional enrichment (GO, KEGG)**
 
-Build cancer classification models (RF, SVM, ANN, GBM)
+The pipeline leverages both **Galaxy** (for raw FASTQ analysis) and **R/Python** for computational downstream analysis.
 
-Evaluate immune infiltration patterns
+### 🔬 Hybrid Workflow Used:
+✔ **Galaxy** → QC → trimming → alignment → quantification  
+✔ **R + Python** → DEG → biomarker selection → ML classification → immune analysis  
 
-Provide a reproducible analysis pipeline for future CRC biomarker research
+This repository provides a **fully reproducible pipeline** for CRC biomarker discovery and model building.
 
-# Workflow
+---
 
-<img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/7fcbff94-fa59-4e86-b7bd-09ecefd83c1b" />
+# 🎯 Objectives
 
+1. **Identify differentially expressed genes (DEGs)** between CRC tumour and normal tissues.  
+2. **Screen biomarker genes** using:
+   - LASSO regression  
+   - ROC analysis  
+   - ML feature ranking  
+3. **Build supervised ML models**:
+   - Random Forest (RF)  
+   - Support Vector Machine (SVM)  
+   - Gradient Boosting Machine (GBM)  
+   - Artificial Neural Network (ANN)  
+4. **Evaluate immune infiltration** patterns using CIBERSORT.  
+5. **Provide a reproducible bioinformatics workflow** for future CRC biomarker research.
 
-# Dataset Information
+---
 
-Accession ID: GSE156451
+# 🧬 Workflow
 
-Samples: 144 total
+<img width="800" height="450" alt="workflow" src="https://github.com/user-attachments/assets/7fcbff94-fa59-4e86-b7bd-09ecefd83c1b" />
 
-72 colorectal cancer tumor samples
+# 📁 Dataset Information
 
-72 matched adjacent normal tissues
+**Accession ID:** GSE156451  
+**Samples:** 144 total  
+- 72 colorectal cancer tumour tissues  
+- 72 matched adjacent normal tissues  
 
-Platform: Illumina RNA-seq
+**Platform:** Illumina RNA-seq  
+**Data type:** Raw FASTQ + processed gene counts  
 
-Type: Raw FASTQ files + processed counts
+Raw dataset available from GEO:  
+🔗 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156451
 
-Raw data can be downloaded from:
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156451
+---
 
-GSE156451 – NCBI Gene Expression Omnibus.
+# 👥 Project Members
 
+- **Yusuf**  
+- **Saniya**  
+- **Fahad**  
+- **Farha**
 
-# Project Members-
+---
 
-Yusuf, Bilal, Saniya, Fahad and Farha 
+# 📂 Repository Structure
 
-# Repository Structure
 
 ```
 ├── README.md
@@ -87,31 +112,40 @@ Yusuf, Bilal, Saniya, Fahad and Farha
     ├── requirements.txt
     └── environment.yml
 ```
-# Tools Used
+---
 
-The following tools and packages were used in this RNA-seq analysis pipeline:
+# 🧰 Tools Used
 
-    FastQC – for raw sequence quality control
+### 🧪 **RNA-seq Processing (Galaxy platform)**  
+- **FastQC** — Quality control  
+- **Fastp** — Trimming and filtering  
+- **MultiQC** — QC report summary  
+- **Hisat2** — Genome alignment  
+- **FeatureCounts** — Gene-level quantification  
 
-    Fastp – for trimming and filtering of reads
+### 📊 **R Packages**
+- **DESeq2** — Differential expression  
+- **ClusterProfiler** — GO/KEGG enrichment  
+- **pROC** — ROC curve analysis  
+- **glmnet** — LASSO regression  
 
-    MultiQC – for aggregating QC reports
+### 🤖 **Python Packages**
+- numpy  
+- pandas  
+- scipy  
+- scikit-learn  
+- matplotlib / seaborn  
 
-    Hisat2 – for efficient alignment of RNA-seq reads
+---
+#📄 License
+This project is released under the MIT License.
+You are free to use, modify, and distribute with attribution.
 
-    FeatureCounts – for efficient read summarisation
+#📣 Citation
+Farha T, Yusuf S, Saniya, Fahad. 
+AI_and_Biotech_Project: ----
 
-    R Packages:
-
-        DESeq2 – differential expression analysis.
-        ClusterProfiler-
-        
-    Python Packages:
-        numpy
-        pandas
-        scipy
-        scikit-learn
-
-
+📬 Contact
+Email: 
         
     
