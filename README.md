@@ -6,7 +6,7 @@
 
 # 👥 Project Members
 
-- **Yusuf**  
+- **Yusuf Munir Aliyu**  
 - **Saniya**  
 - **Fahad**  
 - **Farha**
@@ -70,10 +70,6 @@ This repository provides a **fully reproducible pipeline** for CRC biomarker dis
 
 Raw dataset available from GEO:  
 🔗 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156451
-
----
-
-
 
 ---
 
