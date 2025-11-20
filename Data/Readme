@@ -9,4 +9,4 @@ Although this genome was not used in the workflow, an inquiry between the two co
 
 # Gene Annotation
 
-For the read-counting step, an external Annotation GTF file (uploaded from the project’s shared drive folder- https://drive.google.com/file/d/1nQoE4uxA5Ks6m5s2HK8lxA2qhLvCpEEv/view?usp=drive_link) was used as the gene annotation reference. This file served as the basis for assigning aligned reads to genomic features during quantification.
+For the read-counting step, an external Annotation GTF file (uploaded from the project’s shared [drive folder](https://drive.google.com/file/d/1nQoE4uxA5Ks6m5s2HK8lxA2qhLvCpEEv/view?usp=drive_link) was used as the gene annotation reference. This file served as the basis for assigning aligned reads to genomic features during quantification.
