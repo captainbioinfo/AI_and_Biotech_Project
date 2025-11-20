@@ -33,8 +33,6 @@ The pipeline leverages both **Galaxy** (for raw FASTQ analysis) and **R/Python**
 ✔ **Galaxy** → QC → trimming → alignment → quantification  
 ✔ **R + Python** → DEG → biomarker selection → ML classification → immune analysis  
 
-This repository provides a **fully reproducible pipeline** for CRC biomarker discovery and model building.
-
 ---
 
 # 🎯 Objectives
