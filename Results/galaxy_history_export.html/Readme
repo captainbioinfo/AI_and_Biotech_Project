@@ -7,7 +7,7 @@ Convert SRA files to FASTQ format.
 
 # Fastp
 Perform adapter trimming, quality filtering, and read cleaning.
-Generate per-sample QC reports
+Generate per-sample QC reports.
 
 # MultiQC
 Aggregate all Fastp QC reports into a single, interactive summary.
