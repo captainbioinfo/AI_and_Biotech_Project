@@ -3,6 +3,17 @@
 
 ---
 
+
+# 👥 Project Members
+
+- **Yusuf**  
+- **Saniya**  
+- **Fahad**  
+- **Farha**
+---
+
+
+
 # 📌 Project Overview
 
 Colorectal cancer (CRC) is the third most prevalent malignancy worldwide and accounts for nearly **10% of all cancer-related deaths**. Accurate early detection remains a challenge due to tumour heterogeneity and lack of reliable biomarkers.
@@ -62,12 +73,7 @@ Raw dataset available from GEO:
 
 ---
 
-# 👥 Project Members
 
-- **Yusuf**  
-- **Saniya**  
-- **Fahad**  
-- **Farha**
 
 ---
 
