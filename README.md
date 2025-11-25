@@ -134,11 +134,11 @@ Raw dataset available from GEO:
 - matplotlib / seaborn  
 
 ---
-#📄 License
+📄 License
 This project is released under the MIT License.
 You are free to use, modify, and distribute with attribution.
 
-#📣 Citation
+📣 Citation
 Farha T, Yusuf S, Saniya, Fahad. 
 AI_and_Biotech_Project: ----
 
