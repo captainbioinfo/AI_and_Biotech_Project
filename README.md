@@ -7,9 +7,9 @@
 # 👥 Project Members
 
 - **Yusuf Munir Aliyu**  
-- **Saniya**  
-- **Fahad**  
-- **Farha**
+- **Saniya Khurshid**  
+- **Fahad Sajjad**  
+- **Farha Tarique**
 ---
 
 
@@ -43,11 +43,9 @@ The pipeline leverages both **Galaxy** (for raw FASTQ analysis) and **R/Python**
    - ROC analysis  
    - ML feature ranking  
 3. **Build supervised ML models**:
-   - Random Forest (RF)  
-   - Support Vector Machine (SVM)  
-   - Gradient Boosting Machine (GBM)  
-   - Artificial Neural Network (ANN)  
-4. **Evaluate immune infiltration** patterns using CIBERSORT.  
+      - Support Vector Machine (SVM)  
+    
+4.  
 5. **Provide a reproducible bioinformatics workflow** for future CRC biomarker research.
 
 ---
