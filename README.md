@@ -1,5 +1,5 @@
 # AI_and_Biotech_Project
-### *RNA-Seq Biomarker Discovery and Machine-Learning Classification for Colorectal Cancer (CRC)*
+### *Exploring RNA-Seq derived Biomarkers for colorectal cancer classification via Machine Learning.*
 
 ---
 
