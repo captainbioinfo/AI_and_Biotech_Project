@@ -23,8 +23,7 @@ This project integrates:
 - **RNA-seq preprocessing**
 - **Differential gene expression (DEG) analysis**
 - **Feature selection (LASSO, ROC-AUC screening)**
-- **Machine-learning classification (SVM, RF, ANN, GBM)**
-- **Immune infiltration profiling (CIBERSORT)**
+- **Machine-learning classification (SVM)**
 - **Functional enrichment (GO, KEGG)**
 
 The pipeline leverages both **Galaxy** (for raw FASTQ analysis) and **R/Python** for computational downstream analysis.
