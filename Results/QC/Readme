@@ -1,0 +1,23 @@
+This folder contains .html files from the galaxy workflow history.
+The analysis workflow consists of the following major steps:
+
+# FasterQ-Dump
+Download raw sequencing data from NCBI SRA.
+Convert SRA files to FASTQ format.
+
+# Fastp
+Perform adapter trimming, quality filtering, and read cleaning.
+Generate per-sample QC reports.
+
+# MultiQC
+Aggregate all Fastp QC reports into a single, interactive summary.
+
+# HISAT2 
+Align clean reads to the reference genome.
+Generate SAM/BAM alignment files.
+
+# Samtools Flagstat
+Compute alignment statistics and QC metrics for BAM files.
+
+# featureCounts
+Quantify gene-level read counts from BAM alignments.
