@@ -1,6 +1,6 @@
 # =====================================================================
 # DIRECT GO AND KEGG ENRICHMENT ANALYSIS
-#  Direct gene enrichment
+# Direct gene enrichment
 # =====================================================================
 
 # Set user library path
@@ -41,11 +41,11 @@ cat("(No normalization, No DEG creation)\n\n")
 # =====================================================================
 cat("STEP 1: Reading gene list...\n")
 
-# Option 1: Read from normalized_counts.csv (all genes)
-gene_file <- "C:/Users/DELL/Downloads/normalized_counts/normalized_counts.csv"
+# Read from gene_counts_ml.csv
+gene_file <- "C:/Users/DELL/Downloads/gene_counts_ml.csv"
 
 if (file.exists(gene_file)) {
-  cat("  Reading from normalized_counts.csv\n")
+  cat("  Reading from gene_counts_ml.csv\n")
   count_data <- read.csv(gene_file, header = TRUE)
   
   # Get gene IDs (first column)
@@ -56,7 +56,7 @@ if (file.exists(gene_file)) {
   
   cat("✓ Total genes loaded:", length(gene_ids), "\n\n")
 } else {
-  stop("normalized_counts.csv not found!")
+  stop("gene_counts_ml.csv not found at C:/Users/DELL/Downloads/")
 }
 
 # =====================================================================
