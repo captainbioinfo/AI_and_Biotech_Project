@@ -20,7 +20,7 @@ Colorectal cancer (CRC) is the third most prevalent malignancy worldwide and acc
 
 This project integrates:
 
-- **RNA-seq preprocessing**
+- **RNA-seq preprocessing and normalization**
 - **Differential gene expression (DEG) analysis**
 - **Feature selection (LASSO, ROC-AUC screening)**
 - **Functional enrichment (GO, KEGG)**
@@ -139,7 +139,7 @@ This project is released under the MIT License.
 You are free to use, modify, and distribute with attribution.
 
 📣 Citation
-Farha T, Yusuf S, Saniya, Fahad. 
+Farha, T., Munir, Y. A., Saniya, K., Fahad, S. 
 AI_and_Biotech_Project: ----
 
 📬 Contact
