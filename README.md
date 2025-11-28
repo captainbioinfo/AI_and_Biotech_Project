@@ -23,6 +23,7 @@ This project integrates:
 - **RNA-seq preprocessing**
 - **Differential gene expression (DEG) analysis**
 - **Feature selection (LASSO, ROC-AUC screening)**
+- **Functional enrichment (GO, KEGG)**
 - **Machine-learning classification (SVM)**
 - **Functional enrichment (GO, KEGG)**
 
