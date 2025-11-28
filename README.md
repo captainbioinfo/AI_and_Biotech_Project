@@ -25,7 +25,6 @@ This project integrates:
 - **Feature selection (LASSO, ROC-AUC screening)**
 - **Functional enrichment (GO, KEGG)**
 - **Machine-learning classification (SVM)**
-- **Functional enrichment (GO, KEGG)**
 
 The pipeline leverages both **Galaxy** (for raw FASTQ analysis) and **R/Python** for computational downstream analysis.
 
