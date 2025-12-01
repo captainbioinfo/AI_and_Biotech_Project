@@ -1,0 +1,132 @@
+---
+title: "Untitled"
+author: "farha"
+date: "`r Sys.Date()`"
+output: html_document
+---
+```{r}
+install.packages("pROC")
+install.packages("viridis")
+install.packages("gridExtra")
+
+```
+
+
+```{r}
+###########################################
+# Load Libraries
+###########################################
+library(ggplot2)
+library(pROC)
+library(reshape2)
+library(dplyr)
+library(viridis)
+library(gridExtra)
+
+###########################################
+# Load Data
+###########################################
+expr <- read.csv("gene_counts_ml.csv", row.names = 1)
+meta <- read.csv("metadata.csv")
+
+# Confirm matching sample order
+stopifnot(all(colnames(expr) == meta$Sample))
+
+###########################################
+# Biomarker List
+###########################################
+biomarkers <- c(
+  "ENSG00000272620",  # AFAP1-AS1
+  "ENSG00000130600",  # H19
+  "ENSG00000228437",  # LINC02474
+  "ENSG00000172023"   # ENSG72023
+)
+
+symbol_map <- c(
+  "ENSG00000272620" = "AFAP1-AS1",
+  "ENSG00000130600" = "H19",
+  "ENSG00000228437" = "LINC02474",
+  "ENSG00000172023" = "ENSG72023"
+)
+
+###########################################
+# Normalize Expression (log2 TPM-like)
+###########################################
+expr_norm <- log2(expr + 1)
+
+###########################################
+# Output Folder
+###########################################
+outdir <- "biomarker_figures"
+if(!dir.exists(outdir)) dir.create(outdir)
+
+###########################################
+# Plot Function
+###########################################
+plot_biomarker <- function(gene, symbol){
+
+  df <- data.frame(
+    expr = as.numeric(expr_norm[gene, ]),
+    condition = meta$condition
+  )
+
+  #########################################
+  # ROC Curve using pROC
+  #########################################
+  # Ensure ordering: Normal (0) vs Tumor (1)
+  df$condition_bin <- ifelse(df$condition == "Tumor", 1, 0)
+
+  roc_obj <- roc(df$condition_bin, df$expr)
+  auc_value <- round(auc(roc_obj), 3)
+
+  # ROC plot
+  roc_df <- data.frame(
+    tpr = roc_obj$sensitivities,
+    fpr = 1 - roc_obj$specificities
+  )
+
+  p1 <- ggplot(roc_df, aes(x = fpr, y = tpr)) +
+    geom_line(size = 1.2, color = "#0072B2") +
+    geom_abline(linetype = "dashed") +
+    theme_minimal(base_size = 14) +
+    ggtitle(paste(symbol, "ROC Curve (AUC =", auc_value, ")")) +
+    xlab("False Positive Rate") +
+    ylab("True Positive Rate")
+
+  #########################################
+  # Violin + Boxplot
+  #########################################
+  p2 <- ggplot(df, aes(x = condition, y = expr, fill = condition)) +
+    geom_violin(alpha = 0.5, trim = FALSE) +
+    geom_boxplot(width = 0.15, outlier.shape = NA) +
+    theme_minimal(base_size = 14) +
+    scale_fill_viridis(discrete = TRUE) +
+    ylab("Expression (log2 normalized)") +
+    ggtitle(paste(symbol, "Expression by Condition"))
+
+  #########################################
+  # Density Plot
+  #########################################
+  p3 <- ggplot(df, aes(x = expr, fill = condition)) +
+    geom_density(alpha = 0.4) +
+    theme_minimal(base_size = 14) +
+    scale_fill_viridis(discrete = TRUE) +
+    ggtitle(paste(symbol, "Density Plot"))
+
+  #########################################
+  # Save Figures
+  #########################################
+  ggsave(paste0(outdir, "/", symbol, "_ROC.png"), p1, width = 5, height = 5, dpi = 300)
+  ggsave(paste0(outdir, "/", symbol, "_violin.png"), p2, width = 5, height = 5, dpi = 300)
+  ggsave(paste0(outdir, "/", symbol, "_density.png"), p3, width = 5, height = 5, dpi = 300)
+}
+
+###########################################
+# Run for All Biomarkers
+###########################################
+for(g in biomarkers){
+  plot_biomarker(g, symbol_map[g])
+}
+
+```
+
