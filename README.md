@@ -72,38 +72,60 @@ Raw dataset available from GEO:
 
 
 ```
-├── README.md
+CRC-Biomarker-Discovery/
 │
-├── galaxy_history_export.html/
-│   ├── fastp_results
-│   ├── feature_count_results
-│   ├── gene_counts_matrix
-│   ├── alignments/
-│   └── hisat2_results
-│
-│       
-├── data/
+├── 📁 Data/
+│   ├── gene_counts_cleaned.csv
 │   ├── metadata.csv
-│   ├── processed/
-│   │   ├── normalized_counts.csv
-│   │   ├── DEGs_results.csv
-│   │   └── biomarker_genes.csv
-│   └── raw/ (empty – raw FASTQs stored in Galaxy)
+│   └── README.md
 │
-├── scripts/
-│   ├── to_merge_featurecounts.py
+├── 📁 References/
+│   └── Tool_References.md
+│
+├── 📁 Scripts/
+│   ├── DESeq2_Normalization_and_Plotting.R
+│   ├── GO_and_KEGG.R
 │   ├── ML_script.ipynb
-│   ├── 
-    ├── deseq2_DEG_analysis.R
-│   └── 
+│   ├── biomarker_figures_script.Rmd
+│   ├── to_merge_featurecounts.py
+│   └── README.md
 │
-├── results/
-│   ├── DEG_plots/
-│   ├── ML_performance/
-│   │   
-│   └── /
+├── 📁 Results/
+│   ├── 📁 DEG/
+│   │   ├── volcano_plot.png
+│   │   ├── heatmap_top50.png
+│   │   └── DESeq2_results.csv
+│   │
+│   ├── 📁 Enrichment_Analysis/
+│   │   ├── GO_BP_MF_CC.csv
+│   │   ├── KEGG_pathways.csv
+│   │   └── enrichment_plots/
+│   │
+│   ├── 📁 ML/
+│   │   ├── LASSO_results.csv
+│   │   ├── SVM_RFE_results.csv
+│   │   ├── core_genes.csv
+│   │   ├── ROC_curves.png
+│   │   └── stability_scores.csv
+│   │
+│   ├── 📁 QC/
+│   │   ├── fastqc_reports/
+│   │   └── multiqc_report.html
 │
-└──
+├── 📁 Figures/
+│   ├── workflow_diagram.png
+│   ├── PCA_UMAP.png
+│   └── biomarker_violin_density.png
+│
+├── 📁 Docs/
+│   ├── Project_Overview.md
+│   ├── Pipeline_Workflow.md
+│   ├── QC_Guidelines.md
+│   └── References.md
+│
+├── LICENSE
+└── README.md
+
 ```
 ---
 
