@@ -20,7 +20,7 @@ Colorectal cancer (CRC) is the third most prevalent malignancy worldwide and acc
 
 This project integrates:
 
-- **RNA-seq preprocessing and normalization**
+- **RNA-seq preprocessing and normalisation**
 - **Differential gene expression (DEG) analysis**
 - **Feature selection (LASSO, ROC-AUC screening)**
 - **Functional enrichment (GO, KEGG)**
@@ -30,7 +30,7 @@ The pipeline leverages both **Galaxy** (for raw FASTQ analysis) and **R/Python**
 
 ### 🔬 Hybrid Workflow Used:
 ✔ **Galaxy** → QC → trimming → alignment → quantification  
-✔ **R + Python** → DEG → biomarker selection → ML classification → immune analysis  
+✔ **R + Python** → DEG → biomarker selection → ML classification  
 
 ---
 
@@ -91,23 +91,19 @@ Raw dataset available from GEO:
 │   └── raw/ (empty – raw FASTQs stored in Galaxy)
 │
 ├── scripts/
-│   ├── 01_to_merge_featurecounts.py
-│   ├── 02_LASSO_biomarker_selection.ipynb
-│   ├── 03_ML_classification_models.ipynb
-│   ├── 04_ROC_evaluation.ipynb
-    ├── 01_deseq2_DEG_analysis.R
-│   └── 05_immune_infiltration_analysis.ipynb
+│   ├── to_merge_featurecounts.py
+│   ├── ML_script.ipynb
+│   ├── 
+    ├── deseq2_DEG_analysis.R
+│   └── 
 │
 ├── results/
 │   ├── DEG_plots/
 │   ├── ML_performance/
-│   ├── ROC_curves/
-│   ├── biomarker_analysis/
-│   └── immune_infiltration/
+│   │   
+│   └── /
 │
-└── environment/
-    ├── requirements.txt
-    └── environment.yml
+└──
 ```
 ---
 
