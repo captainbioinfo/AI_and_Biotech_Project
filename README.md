@@ -51,7 +51,8 @@ The pipeline leverages both **Galaxy** (for raw FASTQ analysis) and **R/Python**
 
 # 🧬 Workflow
 
-<img width="800" height="450" alt="workflow" src="https://github.com/user-attachments/assets/7fcbff94-fa59-4e86-b7bd-09ecefd83c1b" />
+<img width="600" height="337" alt="image" src="https://github.com/user-attachments/assets/425fd34d-c7cd-49ca-a440-da8e55251b3c" />
+
 
 # 📁 Dataset Information
 
