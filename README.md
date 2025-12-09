@@ -159,9 +159,9 @@ You are free to use, modify, and distribute with attribution.
 
 📣 Citation
 Farha, T., Munir, Y. A., Saniya, K., Fahad, S. 
-AI_and_Biotech_Project: ----
+AI_and_Biotech_Project: ---- 
 
 📬 Contact
-Email: 
+Email: tariquefarha@gmail.com
         
     
